@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4>Add Cards</h4>
+      </div>
+      <div class="panel-body">
+        <form ng-submit="newCard()" focus-on-submit>
+          <input type="text" ng-model="question">
+          <input type="text" ng-model="answer">
+          <input type="submit">
+        </form>
+      </div>
+      <!-- Table -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Question
+            </th>
+            <th>
+              Answer
+            </th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="card in cards">
+      <span {{todo.name}}</span>
+            <td>
+              {{ $index + 1}}
+            </td>
+            <td ng-dblclick="editCard(card)">
+              <span ng-hide="card.editing">{{ card.question }}</span>
+              <form ng-submit="doneEditingCard(card)" ng-show="card.editing">
+                <input ng-model="card.front" ng-blur="card.editing = false;">
+              </form>
+            </td>
+            <td ng-dblclick="editCard(card)">
+              <span ng-hide="card.editing">{{ card.answer }}</span>
+              <form ng-submit="doneEditingCard(card)" ng-show="card.editing">
+                <input ng-model="card.back" ng-blur="card.editing = false;">
+              </form>
+            </td>
+            <td>
+              <button class='btn btn-danger btn-xs' ng-click="destroyCard(card)">X</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

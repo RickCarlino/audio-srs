@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Original Template: http://startbootstrap.com/templates/simple-sidebar.html -->
+<html lang="en" ng-app='app'>
+
+<head>
+    <title>LingoLobster</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/underscore.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/restangular.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    <!-- navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#/deck/53bb5523a667b8628e000004">LingoLobster</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href = "#/deck/53bb5523a667b8628e000004/review">Review</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper" class="col-md-12">
+            <div class="content-header">
+                <h1>
+                    Thinking Lobster
+                </h1>
+            </div>
+
+            <div class="page-content inset" ng-view>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="lead">
+                          Loading...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /navbar -->
+    </div>
+  <!-- application files -->
+  <script src="spa/app.js"></script>
+  <script src="spa/main_ctrl.js"></script>
+  <script src="spa/review_ctrl.js"></script>
+</body>
+
+</html>

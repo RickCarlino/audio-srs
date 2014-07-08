@@ -1,0 +1,10 @@
+<h2>Review</h2>
+<p>Select a Voice:</p>
+<select ng-options="l.name for l in languages" ng-model="selectedLang"></select>
+<p>Message:</p>
+<input type="text" ng-model="msg">
+<button ng-click="play()">Play</button>
+<h3 ng-if="selectedLang"> Current Language: {{ selectedLang.name }}</h3>
+<ul ng-repeat="card in cards" ng-if="!!selectedLang">
+  <li>{{ card.answer }} -> {{ card.choices }} {{ play(card.question) }}</li>
+</ul>
