@@ -5,16 +5,49 @@ app.controller('reviewCtrl',
                 'Restangular',
                 '$routeParams',
                 function($scope, Restangular, $routeParams) {
+                  $scope.cards_url = 'deck/'+$routeParams.deck_id+'/cards/due';
+                  $scope.cards = Restangular.all($scope.cards_url).getList().$object;
+                  $scope.cardIndex = 0;
 
-                  var deck_url  = 'deck/' + $routeParams.deck_id;
-                  $scope.cards_url = deck_url + '/cards';
-                  $scope.review_url = deck_url + '/review';
-                  $scope.getCards = Restangular.all($scope.cards_url + '/due').getList
-                  $scope.cards = $scope.getCards().$object;
-
+                  $scope.currentCard = function(){
+                    return $scope.cards[$scope.cardIndex]
+                  };
+                  $scope.playAnswer = function(){
+                    $scope.play($scope.currentCard().answer)
+                  };
+                  $scope.submitAnswer = function(answer){
+                    if (answer === $scope.currentCard().answer) {
+                      $scope.markCorrect();
+                    } else{
+                      $scope.markWrong();
+                    };
+                  };
+                  $scope.markCorrect = function(){
+                    $scope.currentCard().customPOST({}, 'correct').then(function(){
+                      $scope.nextCard();
+                      console.log('Right.');  
+                    }, function(){
+                      console.log('OH NOES!');
+                    });
+                  };
+                  $scope.markWrong = function(){
+                    $scope.currentCard().customPOST({}, 'correct').then(function(){
+                      $scope.nextCard();
+                      console.log('Wrong.');  
+                    }, function(){
+                      console.log('OH NOES!');
+                    });
+                  };
+                  $scope.nextCard = function(){
+                    if ($scope.cardIndex < ($scope.cards.length - 1)) {
+                      $scope.cardIndex++;
+                    } else {
+                      alert('Done!');
+                    };
+                  };
                   window.speechSynthesis.onvoiceschanged = function() {
                     $scope.languages = window.speechSynthesis.getVoices();
-                    $scope.$apply();
+                    $scope.$digest();
                   };
                   $scope.play = function(text){
                     var msg = new SpeechSynthesisUtterance();

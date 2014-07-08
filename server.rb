@@ -105,6 +105,22 @@ end
     end
   end
 
+  # Mark item correct
+  post '/api/deck/:deck_id/cards/due/:id/correct' do
+    card = Card.find(@params['id'])
+    card.mark_correct!
+    status 200
+    body card.to_json
+  end
+
+  # Mark item correct
+  post '/api/deck/:deck_id/cards/due/:id/incorrect' do
+    card = Card.find(@params['id'])
+    card.mark_incorrect!
+    status 200
+    body card.to_json
+  end
+
   # Remove a card from a deck
   delete '/api/deck/:deck_id/cards/:id' do
     Card.where(deck_id: @params['deck_id']).find(params[:id]).destroy
