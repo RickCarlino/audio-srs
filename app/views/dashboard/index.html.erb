@@ -1,0 +1,30 @@
+<script type="text/javascript">
+  window.deck_id = "<%= @token %>";
+</script>
+<script id="mainCtrl" type="text/ng-template">
+  <%= render partial: "dashboard/ng-partials/main" %>
+</script>
+<script id="reviewCtrl" type="text/ng-template">
+  <%= render partial: "dashboard/ng-partials/review" %>
+</script>
+<div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/deck/<%= @token %>">LingoLobster</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href = "#/deck/<%= @token %>/review">Review</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </div>
+    <!-- Page content -->
+    <div id="page-content-wrapper" class="col-md-12">
+        <div class="content-header">
+        </div>
+
+        <div class="page-content inset" ng-view>
+            <%= render partial: "dashboard/ng-partials/main" %>
+        </div>
+    </div>

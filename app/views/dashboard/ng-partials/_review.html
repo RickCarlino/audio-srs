@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-8">
+    <p>Select a language from the list.
+      <select ng-options="l.name for l in languages" ng-model="selectedLang">
+      </select>
+    </p>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div ng-if="selectedLang">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="ng-binding"><button ng-click='playAnswer()'>Play</button></h1>
+        </div>
+        <div class="panel-body">
+          <div ng-repeat='choice in currentCard().choices'>
+            <button class='btn' ng-click="submitAnswer(choice)">{{ choice }}</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

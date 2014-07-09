@@ -1,6 +1,4 @@
-load 'server.rb'
+# This file is used by Rack-based servers to start the application.
 
-## There is no need to set directories here anymore;
-## Just run the application
-
-run Sinatra::Application
+require ::File.expand_path('../config/environment',  __FILE__)
+run Rails.application
