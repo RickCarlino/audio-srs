@@ -10819,3 +10819,407 @@ Processing by CardsController#correct as JSON
   MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbcd05269632888040000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:54:08 UTC, "review_due_at"=>2014-07-09 05:54:08 UTC, "updated_at"=>2014-07-09 03:54:08 UTC}} flags=[]
                          COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6620ms
 Completed 200 OK in 5ms (Views: 0.7ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.4ms)
+  Rendered dashboard/ng-partials/_review.html (0.3ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 84ms (Views: 84.1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:58:33 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.8480ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.1560ms
+Completed 200 OK in 33ms (Views: 11.3ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:58:37 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"one", "answer"=>"two", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"one", "answer"=>"two"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbded52696328c5000000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"one", "answer"=>"two", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:58:37 UTC, "updated_at"=>2014-07-09 03:58:37 UTC, "created_at"=>2014-07-09 03:58:37 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6460ms
+Completed 200 OK in 6ms (Views: 0.8ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 30.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:59:10 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7730ms
+Completed 200 OK in 7ms (Views: 7.1ms)
+
+
+Started DELETE "/decks/53bcba205269632871000000/cards/53bcbded52696328c5000000" for 127.0.0.1 at 2014-07-08 20:59:15 -0700
+Processing by CardsController#destroy as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "id"=>"53bcbded52696328c5000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbded52696328c5000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4850ms
+  MOPED: 127.0.0.1:27017 DELETE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbded52696328c5000000')} flags=[:remove_first]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.4340ms
+  Rendered text template (0.0ms)
+Completed 204 No Content in 4ms (Views: 1.6ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:59:15 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8160ms
+Completed 200 OK in 3ms (Views: 2.9ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:59:18 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"hey", "answer"=>"there", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"hey", "answer"=>"there"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbe1652696328c5010000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"hey", "answer"=>"there", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:59:18 UTC, "updated_at"=>2014-07-09 03:59:18 UTC, "created_at"=>2014-07-09 03:59:18 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.7500ms
+Completed 200 OK in 3ms (Views: 0.6ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 21:00:35 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7630ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 04:00:35 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 1.1550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields={"answer"=>1} runtime: 0.8530ms
+Completed 200 OK in 8ms (Views: 1.0ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 21:04:37 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 21:04:38 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 04:04:38 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.8250ms
+Completed 200 OK in 6ms (Views: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 21:07:12 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms)
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:12 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:12 -0700
+
+
+Started POST "/decks" for 127.0.0.1 at 2014-07-08 21:07:17 -0700
+Processing by DecksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YBPB0LGPJj+PCYi94w6/Nx5GmWYwMUnB4wajDqhEAp4=", "commit"=>"New Vocabulary Deck"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5050ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=decks documents=[{"_id"=>BSON::ObjectId('53bcbff552696328c5020000')}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6030ms
+  Rendered decks/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 6.1ms)
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:18 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:18 -0700
+
+
+Started GET "/dashboard?token=53bcbff552696328c5020000" for 127.0.0.1 at 2014-07-08 21:07:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcbff552696328c5020000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.1ms)
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 13ms (Views: 12.5ms)
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:30 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:07:30 -0700
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:07:30 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7840ms
+Completed 200 OK in 2ms (Views: 1.9ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:10:31 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"test", "answer"=>"word", "deck_id"=>"53bcbff552696328c5020000", "card"=>{"deck_id"=>"53bcbff552696328c5020000", "question"=>"test", "answer"=>"word"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3830ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcc0b752696328c5030000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"test", "answer"=>"word", "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000'), "review_due_at"=>2014-07-09 04:10:31 UTC, "updated_at"=>2014-07-09 04:10:31 UTC, "created_at"=>2014-07-09 04:10:31 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5460ms
+Completed 200 OK in 4ms (Views: 0.8ms)
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards?search=due" for 127.0.0.1 at 2014-07-08 21:10:32 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 04:10:32 UTC}, "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.8690ms
+Completed 200 OK in 4ms (Views: 0.6ms)
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:10:36 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9100ms
+Completed 200 OK in 3ms (Views: 2.7ms)
+
+
+Started DELETE "/decks/53bcbff552696328c5020000/cards/53bcc0b752696328c5030000" for 127.0.0.1 at 2014-07-08 21:10:38 -0700
+Processing by CardsController#destroy as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000", "id"=>"53bcc0b752696328c5030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc0b752696328c5030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5130ms
+  MOPED: 127.0.0.1:27017 DELETE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc0b752696328c5030000')} flags=[:remove_first]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.4820ms
+  Rendered text template (0.0ms)
+Completed 204 No Content in 3ms (Views: 0.5ms)
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:10:38 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6120ms
+Completed 200 OK in 2ms (Views: 1.4ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:24:06 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"เวลา", "answer"=>"time", "deck_id"=>"53bcbff552696328c5020000", "card"=>{"deck_id"=>"53bcbff552696328c5020000", "question"=>"เวลา", "answer"=>"time"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4940ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcc3e652696328c5040000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"เวลา", "answer"=>"time", "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000'), "review_due_at"=>2014-07-09 04:24:06 UTC, "updated_at"=>2014-07-09 04:24:06 UTC, "created_at"=>2014-07-09 04:24:06 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5720ms
+Completed 200 OK in 4ms (Views: 0.6ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:24:36 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"มะม่วง", "answer"=>"mango", "deck_id"=>"53bcbff552696328c5020000", "card"=>{"deck_id"=>"53bcbff552696328c5020000", "question"=>"มะม่วง", "answer"=>"mango"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.3830ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcc40452696328c5050000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"มะม่วง", "answer"=>"mango", "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000'), "review_due_at"=>2014-07-09 04:24:36 UTC, "updated_at"=>2014-07-09 04:24:36 UTC, "created_at"=>2014-07-09 04:24:36 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5630ms
+Completed 200 OK in 4ms (Views: 0.7ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards" for 127.0.0.1 at 2014-07-08 21:25:02 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"บ้าน", "answer"=>"house", "deck_id"=>"53bcbff552696328c5020000", "card"=>{"deck_id"=>"53bcbff552696328c5020000", "question"=>"บ้าน", "answer"=>"house"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcc41e52696328c5060000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"บ้าน", "answer"=>"house", "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000'), "review_due_at"=>2014-07-09 04:25:02 UTC, "updated_at"=>2014-07-09 04:25:02 UTC, "created_at"=>2014-07-09 04:25:02 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5730ms
+Completed 200 OK in 3ms (Views: 0.6ms)
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards?search=due" for 127.0.0.1 at 2014-07-08 21:25:09 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 04:25:09 UTC}, "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 1.9940ms
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/dashboard?token=53bcbff552696328c5020000" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcbff552696328c5020000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+
+
+Started GET "/decks/53bcbff552696328c5020000/cards?search=due" for 127.0.0.1 at 2014-07-08 21:25:11 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcbff552696328c5020000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 04:25:11 UTC}, "deck_id"=>BSON::ObjectId('53bcbff552696328c5020000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.7660ms
+Completed 200 OK in 6ms (Views: 1.2ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards/53bcc40452696328c5050000/correct" for 127.0.0.1 at 2014-07-08 21:25:23 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000", "card_id"=>"53bcc40452696328c5050000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc40452696328c5050000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4880ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc40452696328c5050000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 04:25:23 UTC, "review_due_at"=>2014-07-09 06:25:23 UTC, "updated_at"=>2014-07-09 04:25:23 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6040ms
+Completed 200 OK in 4ms (Views: 0.7ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards/53bcc41e52696328c5060000/correct" for 127.0.0.1 at 2014-07-08 21:25:25 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000", "card_id"=>"53bcc41e52696328c5060000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc41e52696328c5060000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5400ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc41e52696328c5060000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 04:25:25 UTC, "review_due_at"=>2014-07-09 06:25:25 UTC, "updated_at"=>2014-07-09 04:25:25 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.9090ms
+Completed 200 OK in 5ms (Views: 0.6ms)
+
+
+Started POST "/decks/53bcbff552696328c5020000/cards/53bcc3e652696328c5040000/correct" for 127.0.0.1 at 2014-07-08 21:25:27 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcbff552696328c5020000", "card_id"=>"53bcc3e652696328c5040000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc3e652696328c5040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5620ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcc3e652696328c5040000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 04:25:27 UTC, "review_due_at"=>2014-07-09 06:25:27 UTC, "updated_at"=>2014-07-09 04:25:27 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6730ms
+Completed 200 OK in 4ms (Views: 0.6ms)

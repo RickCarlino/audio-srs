@@ -20,6 +20,8 @@ app.controller('mainCtrl',
              "answer": $scope.answer,
              "deck_id": $routeParams.deck_id}).then(function(card) {
               $scope.cards.push(card);
+              $scope.answer = '';
+              $scope.question = '';
           }, function() {
             alert('Try that again. Or refresh the page or something.');
           });
