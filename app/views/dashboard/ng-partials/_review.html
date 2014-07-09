@@ -12,12 +12,13 @@
     <div ng-if="selectedLang">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h1 class="ng-binding"><button ng-click='playAnswer()'>Play</button></h1>
+          <h1 class="ng-binding"><button ng-click='playQuestion()'>Play</button></h1>
         </div>
         <div class="panel-body">
           <div ng-repeat='choice in currentCard().choices'>
             <button class='btn' ng-click="submitAnswer(choice)">{{ choice }}</button>
           </div>
+          <h2 ng-if="cards.length == 0">Review List Empty. Come back later.</h2>
       </div>
     </div>
   </div>

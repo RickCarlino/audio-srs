@@ -9834,3 +9834,988 @@ Processing by CardsController#index as JSON
   MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5260ms
   MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:39:33 UTC}, "deck_id"=>BSON::ObjectId('53bcb19d5269632748100000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.4660ms
 Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered pages/home.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 69ms (Views: 68.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:13 -0700
+
+
+Started POST "/decks" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+Processing by DecksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YBPB0LGPJj+PCYi94w6/Nx5GmWYwMUnB4wajDqhEAp4=", "commit"=>"New Vocabulary Deck"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8400ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=decks documents=[{"_id"=>BSON::ObjectId('53bcba205269632871000000')}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.4520ms
+  Rendered decks/create.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 5.5ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:25 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:25 -0700
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.4ms)
+  Rendered dashboard/ng-partials/_review.html (0.4ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 14ms (Views: 13.4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:42:27 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.4660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3760ms
+Completed 200 OK in 3ms (Views: 2.6ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:42:50 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"형용사", "answer"=>"adjectives", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"형용사", "answer"=>"adjectives"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcba3a5269632871010000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"형용사", "answer"=>"adjectives", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:42:50 UTC, "updated_at"=>2014-07-09 03:42:50 UTC, "created_at"=>2014-07-09 03:42:50 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.8740ms
+Completed 200 OK in 5ms (Views: 0.7ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:43:04 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"저렴한", "answer"=>"cheap", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"저렴한", "answer"=>"cheap"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcba485269632871020000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"저렴한", "answer"=>"cheap", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:43:04 UTC, "updated_at"=>2014-07-09 03:43:04 UTC, "created_at"=>2014-07-09 03:43:04 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6360ms
+Completed 200 OK in 3ms (Views: 0.6ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:43:07 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:43:07 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.8910ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields={"answer"=>1} runtime: 1.0310ms
+Completed 200 OK in 7ms (Views: 1.4ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:44:03 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:44:03 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.9450ms
+Completed 200 OK in 5ms (Views: 1.0ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 9.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:44:30 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:44:30 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.8990ms
+Completed 200 OK in 5ms (Views: 1.0ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.1ms)
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 11.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:45:03 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6720ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:45:03 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.7920ms
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 8.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:14 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:45:15 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6030ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:45:15 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.9360ms
+Completed 200 OK in 6ms (Views: 1.0ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.4ms)
+  Rendered dashboard/ng-partials/_review.html (0.4ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 61ms (Views: 60.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:45:30 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 3.2260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:45:30 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 1.5680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields={"answer"=>1} runtime: 1.2480ms
+Completed 200 OK in 37ms (Views: 1.2ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.6ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 39.2ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:46:46 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:46:46 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.7040ms
+Completed 200 OK in 5ms (Views: 0.8ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards/53bcba485269632871020000/correct" for 127.0.0.1 at 2014-07-08 20:46:57 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "card_id"=>"53bcba485269632871020000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba485269632871020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5230ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba485269632871020000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:46:57 UTC, "review_due_at"=>2014-07-09 05:46:57 UTC, "updated_at"=>2014-07-09 03:46:57 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6290ms
+Completed 200 OK in 7ms (Views: 0.8ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 52.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:47:30 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:47:30 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.5980ms
+Completed 200 OK in 4ms (Views: 0.5ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards/53bcba3a5269632871010000/correct" for 127.0.0.1 at 2014-07-08 20:47:40 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "card_id"=>"53bcba3a5269632871010000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba3a5269632871010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4580ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba3a5269632871010000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:47:40 UTC, "review_due_at"=>2014-07-09 05:47:40 UTC, "updated_at"=>2014-07-09 03:47:40 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.4980ms
+Completed 200 OK in 4ms (Views: 0.6ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.1ms)
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 58ms (Views: 57.7ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:48:45 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:48:45 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.4900ms
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.4ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:50:06 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5360ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:50:06 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.4730ms
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.5ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms)
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:50:50 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:50:50 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.4960ms
+Completed 200 OK in 4ms (Views: 0.2ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.4ms)
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:51:20 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5590ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:51:20 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.4510ms
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:51:35 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.5980ms
+Completed 200 OK in 6ms (Views: 5.6ms)
+
+
+Started DELETE "/decks/53bcba205269632871000000/cards/53bcba3a5269632871010000" for 127.0.0.1 at 2014-07-08 20:51:44 -0700
+Processing by CardsController#destroy as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "id"=>"53bcba3a5269632871010000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba3a5269632871010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4610ms
+  MOPED: 127.0.0.1:27017 DELETE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba3a5269632871010000')} flags=[:remove_first]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6860ms
+  Rendered text template (0.0ms)
+Completed 204 No Content in 6ms (Views: 3.0ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:51:44 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6390ms
+Completed 200 OK in 3ms (Views: 2.4ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:51:48 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"형용사", "answer"=>"adj.", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"형용사", "answer"=>"adj."}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbc545269632888000000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"형용사", "answer"=>"adj.", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:51:48 UTC, "updated_at"=>2014-07-09 03:51:48 UTC, "created_at"=>2014-07-09 03:51:48 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6670ms
+Completed 200 OK in 4ms (Views: 0.8ms)
+
+
+Started DELETE "/decks/53bcba205269632871000000/cards/53bcba485269632871020000" for 127.0.0.1 at 2014-07-08 20:51:52 -0700
+Processing by CardsController#destroy as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "id"=>"53bcba485269632871020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba485269632871020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5650ms
+  MOPED: 127.0.0.1:27017 DELETE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcba485269632871020000')} flags=[:remove_first]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6810ms
+  Rendered text template (0.0ms)
+Completed 204 No Content in 3ms (Views: 0.4ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:51:52 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6730ms
+Completed 200 OK in 3ms (Views: 2.2ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards" for 127.0.0.1 at 2014-07-08 20:51:57 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"저렴한", "answer"=>"cheap", "deck_id"=>"53bcba205269632871000000", "card"=>{"deck_id"=>"53bcba205269632871000000", "question"=>"저렴한", "answer"=>"cheap"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbc5d5269632888010000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"저렴한", "answer"=>"cheap", "deck_id"=>BSON::ObjectId('53bcba205269632871000000'), "review_due_at"=>2014-07-09 03:51:57 UTC, "updated_at"=>2014-07-09 03:51:57 UTC, "created_at"=>2014-07-09 03:51:57 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6280ms
+Completed 200 OK in 3ms (Views: 0.6ms)
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:51:59 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:51:59 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 1.3240ms
+Completed 200 OK in 5ms (Views: 1.1ms)
+
+
+Started GET "/dashboard?token=53bcba205269632871000000" for 127.0.0.1 at 2014-07-08 20:52:00 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcba205269632871000000"}
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/ng-partials/_review.html (0.0ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-07-08 20:52:00 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:00 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:00 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+
+
+Started GET "/decks/53bcba205269632871000000/cards?search=due" for 127.0.0.1 at 2014-07-08 20:52:01 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcba205269632871000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:52:01 UTC}, "deck_id"=>BSON::ObjectId('53bcba205269632871000000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.8940ms
+Completed 200 OK in 6ms (Views: 1.0ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards/53bcbc5d5269632888010000/correct" for 127.0.0.1 at 2014-07-08 20:52:12 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "card_id"=>"53bcbc5d5269632888010000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbc5d5269632888010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5340ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbc5d5269632888010000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:52:12 UTC, "review_due_at"=>2014-07-09 05:52:12 UTC, "updated_at"=>2014-07-09 03:52:12 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6020ms
+Completed 200 OK in 5ms (Views: 0.8ms)
+
+
+Started POST "/decks/53bcba205269632871000000/cards/53bcbc545269632888000000/incorrect" for 127.0.0.1 at 2014-07-08 20:52:14 -0700
+Processing by CardsController#incorrect as JSON
+  Parameters: {"deck_id"=>"53bcba205269632871000000", "card_id"=>"53bcbc545269632888000000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbc545269632888000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4880ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbc545269632888000000')} update={"$set"=>{"times_reviewed"=>1, "losing_streak"=>1, "review_due_at"=>2014-07-09 03:52:14 UTC, "updated_at"=>2014-07-09 03:52:14 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5320ms
+Completed 200 OK in 4ms (Views: 0.6ms)
+
+
+Started GET "/" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/misc/underscore.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/angular.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-rails-csrf.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-modules/angular-route.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-modules/restangular.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-config.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-controllers/main_ctrl.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started GET "/assets/ng-controllers/review_ctrl.js?body=1" for 192.168.0.9 at 2014-07-08 20:53:24 -0700
+
+
+Started POST "/decks" for 192.168.0.9 at 2014-07-08 20:53:26 -0700
+Processing by DecksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wcff8JtXYhIcE4XKhNpb0m5AwvdfBRd71dJTD4zJF5k=", "commit"=>"New Vocabulary Deck"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5940ms
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=decks documents=[{"_id"=>BSON::ObjectId('53bcbcb65269632888020000')}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5870ms
+  Rendered decks/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 6.6ms)
+
+
+Started GET "/dashboard?token=53bcbcb65269632888020000" for 192.168.0.9 at 2014-07-08 20:53:28 -0700
+Processing by DashboardController#index as HTML
+  Parameters: {"token"=>"53bcbcb65269632888020000"}
+  Rendered dashboard/ng-partials/_main.html (0.1ms)
+  Rendered dashboard/ng-partials/_review.html (0.1ms)
+  Rendered dashboard/ng-partials/_main.html (0.0ms)
+  Rendered dashboard/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+
+
+Started GET "/decks/53bcbcb65269632888020000/cards" for 192.168.0.9 at 2014-07-08 20:53:29 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"deck_id"=>"53bcbcb65269632888020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"deck_id"=>BSON::ObjectId('53bcbcb65269632888020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5680ms
+Completed 200 OK in 2ms (Views: 1.3ms)
+
+
+Started POST "/decks/53bcbcb65269632888020000/cards" for 192.168.0.9 at 2014-07-08 20:53:43 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"아주", "answer"=>"많이", "deck_id"=>"53bcbcb65269632888020000", "card"=>{"deck_id"=>"53bcbcb65269632888020000", "question"=>"아주", "answer"=>"많이"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbcc75269632888030000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"아주", "answer"=>"많이", "deck_id"=>BSON::ObjectId('53bcbcb65269632888020000'), "review_due_at"=>2014-07-09 03:53:43 UTC, "updated_at"=>2014-07-09 03:53:43 UTC, "created_at"=>2014-07-09 03:53:43 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.9720ms
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started POST "/decks/53bcbcb65269632888020000/cards" for 192.168.0.9 at 2014-07-08 20:53:52 -0700
+Processing by CardsController#create as JSON
+  Parameters: {"question"=>"너무", "answer"=>"많이", "deck_id"=>"53bcbcb65269632888020000", "card"=>{"deck_id"=>"53bcbcb65269632888020000", "question"=>"너무", "answer"=>"많이"}}
+Unpermitted parameters: card
+  MOPED: 127.0.0.1:27017 INSERT       database=newer_thinking_lobster_development collection=cards documents=[{"_id"=>BSON::ObjectId('53bcbcd05269632888040000'), "times_reviewed"=>0, "winning_streak"=>0, "losing_streak"=>0, "question"=>"너무", "answer"=>"많이", "deck_id"=>BSON::ObjectId('53bcbcb65269632888020000'), "review_due_at"=>2014-07-09 03:53:52 UTC, "updated_at"=>2014-07-09 03:53:52 UTC, "created_at"=>2014-07-09 03:53:52 UTC}] flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.7800ms
+Completed 200 OK in 4ms (Views: 0.8ms)
+
+
+Started GET "/decks/53bcbcb65269632888020000/cards?search=due" for 192.168.0.9 at 2014-07-08 20:53:55 -0700
+Processing by CardsController#index as JSON
+  Parameters: {"search"=>"due", "deck_id"=>"53bcbcb65269632888020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"review_due_at"=>{"$lte"=>2014-07-09 03:53:55 UTC}, "deck_id"=>BSON::ObjectId('53bcbcb65269632888020000')} flags=[] limit=25 skip=0 batch_size=nil fields=nil runtime: 0.7760ms
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started POST "/decks/53bcbcb65269632888020000/cards/53bcbcc75269632888030000/correct" for 192.168.0.9 at 2014-07-08 20:54:06 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcbcb65269632888020000", "card_id"=>"53bcbcc75269632888030000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbcc75269632888030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5140ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbcc75269632888030000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:54:06 UTC, "review_due_at"=>2014-07-09 05:54:06 UTC, "updated_at"=>2014-07-09 03:54:06 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.5650ms
+Completed 200 OK in 9ms (Views: 0.6ms)
+
+
+Started POST "/decks/53bcbcb65269632888020000/cards/53bcbcd05269632888040000/correct" for 192.168.0.9 at 2014-07-08 20:54:08 -0700
+Processing by CardsController#correct as JSON
+  Parameters: {"deck_id"=>"53bcbcb65269632888020000", "card_id"=>"53bcbcd05269632888040000", "card"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbcd05269632888040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6100ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=newer_thinking_lobster_development collection=cards selector={"_id"=>BSON::ObjectId('53bcbcd05269632888040000')} update={"$set"=>{"times_reviewed"=>1, "winning_streak"=>1, "previous_review"=>2014-07-09 03:54:08 UTC, "review_due_at"=>2014-07-09 05:54:08 UTC, "updated_at"=>2014-07-09 03:54:08 UTC}} flags=[]
+                         COMMAND      database=newer_thinking_lobster_development command={:getlasterror=>1, :w=>1} runtime: 0.6620ms
+Completed 200 OK in 5ms (Views: 0.7ms)

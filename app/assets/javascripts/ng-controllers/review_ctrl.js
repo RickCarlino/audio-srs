@@ -18,8 +18,8 @@ app.controller('reviewCtrl',
                   $scope.currentCard = function(){
                     return $scope.cards[$scope.cardIndex]
                   };
-                  $scope.playAnswer = function(){
-                    $scope.play($scope.currentCard().answer)
+                  $scope.playQuestion = function(){
+                    $scope.play($scope.currentCard().question)
                   };
                   $scope.submitAnswer = function(answer){
                     if (answer === $scope.currentCard().answer) {
@@ -48,7 +48,9 @@ app.controller('reviewCtrl',
                   $scope.nextCard = function(){
                     if ($scope.cardIndex < ($scope.cards.length - 1)) {
                       $scope.cardIndex++;
+                      $scope.playQuestion();
                     } else {
+                      $scope.selectedLang = false; //for now.
                       alert('Done!');
                     };
                   };
