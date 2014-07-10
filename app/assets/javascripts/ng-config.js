@@ -24,7 +24,3 @@ app.config([
         });
     }
 ]);
-
-if (!window.speechSynthesis) {
-  alert("It looks like your browser does not support HTML 5 speech synthesis. Consider using Chrome or Safari..")
-};
