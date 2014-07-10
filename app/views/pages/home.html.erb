@@ -6,12 +6,27 @@
         <h1>LingoLobster</h1>
       </div>
       <div class="panel-body">
-        <p>LingoLobster uses spaced repetition to help you memorize <strong>foreign language vocabulary through listening only</strong>.</p>
+        <h4>LingoLobster uses spaced repetition to help you memorize <strong>foreign language vocabulary through listening only</strong>.</h4>
         <%= form_for Deck.new do |f| %>
           <%= f.submit 'New Vocabulary Deck', class: 'btn btn-success' %>
         <% end %>
       </div>
     </div>
   </div>
-  <div class="col-md-1 text-center"></div>
+  <div class="col-md-1 text-center">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>frequently asked questions</h1>
+    <h3>What is this?</h3>
+    <p>You enter question/answer pairs. The app quizes you adaptively on how well you've answered in the past. The app assumes you can already read in your target language but need help training your ears. It does so by using HTML 5 speech synthesis.</p>
+    <h3>So it's just a flash card app?</h3>
+    <p>Not really. This app uses <a href="http://en.wikipedia.org/wiki/Spaced_repetition">spaced repetition</a> to adaptivly schedule your review times.</p>
+    <h3>Why?</h3>
+    <p>Try finding a spaced repetition system that only focuses on listening. Chances are, you won't be able to. Many sites will help you learn how to read and write, but do very little to train your ears.</p>
+    <h3>My question isn't listed here!</h3>
+    <p>That's not a question. You can ask me by using the contact link at the footer of this page.</p>
+  </div>
 </div>
