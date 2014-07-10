@@ -24,7 +24,8 @@ app.controller('reviewCtrl', ['$scope',
         // };
         // $scope.refresh();
         $scope.cardIndex = 0;
-
+        $scope.goodBeep = new Audio("good.wav");
+        $scope.badBeep = new Audio("bad.wav");
         $scope.currentCard = function () {
             return $scope.cards[$scope.cardIndex];
         };
@@ -44,17 +45,17 @@ app.controller('reviewCtrl', ['$scope',
                 id: card.id
             }, 'correct').then(function () {
                 $scope.nextCard();
-                console.log('Right.');
+                $scope.goodBeep.play();
             }, function () {
-                console.log('OH NOES!');
+                alert('Server error? I think.');
             });
         };
         $scope.markWrong = function () {
             $scope.currentCard().customPOST({}, 'incorrect').then(function () {
                 $scope.nextCard();
-                console.log('Wrong.');
+                $scope.badBeep.play();
             }, function () {
-                console.log('OH NOES!');
+                alert('Server error? I think.');
             });
         };
         $scope.nextCard = function () {
